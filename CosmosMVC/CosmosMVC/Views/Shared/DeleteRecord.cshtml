@@ -1,0 +1,64 @@
+﻿@model CosmosMVC.Models.FeatureSearchM
+
+@{
+    ViewBag.Title = "DeleteRecord";
+}
+
+<h2>DeleteRecord</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>FeatureSearchM</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.PageID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PageID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Security)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Security)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ViewName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ViewName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ViewType)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ViewType)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IsModel)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IsModel)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

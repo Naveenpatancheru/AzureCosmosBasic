@@ -1,0 +1,53 @@
+﻿@model IEnumerable<CosmosMVC.Models.FeatureSearchM>
+
+
+<h2>FeatureSearch</h2>
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.PageID)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ViewType)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ViewName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.IsModel)
+        </th>
+      
+    </tr>
+    @foreach (var item in Model)
+    {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.PageID)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ViewType)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ViewType)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.IsModel)
+        </td>
+       
+
+    </tr>
+    }
+</table>
+
+<div>
+    <p>
+     
+        @Html.ActionLink("Create New", "AddNewRecord")
+   
+    </p>
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

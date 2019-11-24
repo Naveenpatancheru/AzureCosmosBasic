@@ -249,6 +249,7 @@
     <Compile Include="Models\FeatureSearchM.cs" />
     <Compile Include="Models\DellFeatures.cs" />
     <Compile Include="Models\ProductSettings .cs" />
+    <Compile Include="Models\SearchDetails.cs" />
     <Compile Include="ProductSettings .cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
